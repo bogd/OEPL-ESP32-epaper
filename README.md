@@ -3,7 +3,7 @@ The software is designed to be compiled using VSCode/PlatformIO.
 
 Currently, it includes drivers for the following displays:
 
-- 7,3" Spectra 6 color Epaper Display (buy it here: https://s.click.aliexpress.com/e/_opYM1mB)
+- 7,3" Spectra 6 color Epaper Display (buy it here: https://s.click.aliexpress.com/e/_oDk19jD)
 - 4.01" ACeP color Epaper Display (discontinued)
 
 ![IMG_2872](https://github.com/user-attachments/assets/63864c09-9611-4113-bf48-1980ebcf7a32)
@@ -11,7 +11,7 @@ Currently, it includes drivers for the following displays:
 Select the display type in `/include/main.h`. It's relatively easy to add support for other display types, as long as they use SPI and you have the code to send an image buffer to the display. If you add support for a new display type, feel free to submit a pull request so others can benefit from your work.
 
 When ordering a display, make sure to include an adapter board to access the SPI pins. Avoid purchasing an "ESP32 demo kit" with it, as it is not necessary.
-In addition to the ePaper display and adapter board, you'll need an ESP32. For larger or full-color displays, PSRAM is required. A Wemos S2 mini (buy it here: https://s.click.aliexpress.com/e/_omXS8J9) 
+In addition to the ePaper display and adapter board, you'll need an ESP32. For larger or full-color displays, PSRAM is required. A Wemos S2 mini (buy it here: https://s.click.aliexpress.com/e/_oFBoFr1) 
 with 2 MB of PSRAM works well and is very affordable.
 
 Connecting the pins is straightforward. You can use a header connector instead of wires. Refer to the pinout in `platformio.ini` to determine which pin numbers to use.
