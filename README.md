@@ -14,15 +14,17 @@ When ordering a display, make sure to include an adapter board to access the SPI
 In addition to the ePaper display and adapter board, you'll need an ESP32. For larger or full-color displays, PSRAM is required. A Wemos S2 mini (buy it here: https://s.click.aliexpress.com/e/_omXS8J9) 
 with 2 MB of PSRAM works well and is very affordable.
 
-Connecting the pins is straightforward. Refer to the pinout in `platformio.ini` to determine which pin numbers to use.
+Connecting the pins is straightforward. You can use a header connector instead of wires. Refer to the pinout in `platformio.ini` to determine which pin numbers to use.
 
 ![IMG_2873](https://github.com/user-attachments/assets/8a38a5f7-4447-413e-8db0-b4478f6511da)
 
 A basic 3D-printed case for the 7.3" Spectra display is also included in this repository. Since the bare displays are very fragile, 
-it is highly recommended to provide some protection as a first step.
+it is highly recommended to provide some protection as a first step. It consists of a bezel and an inset. No printing supports needed.
 
 To add rigidity, the case is designed to embed a 9x15 cm prototype board (buy it here: https://s.click.aliexpress.com/e/_oDEHPhz), which can be incorporated during the printing process.
 Configure your slicer to pause the print just before the bridges are printed, insert the prototype board, and then resume printing.
+
+![pause](https://github.com/user-attachments/assets/914c4678-9b6b-4ccc-b5a7-f47e9a3a2b32)
 
 ![IMG_2886](https://github.com/user-attachments/assets/b8605516-7ed5-48f1-8253-3a10afb3c08a)
 
