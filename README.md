@@ -8,8 +8,7 @@ Currently, it includes drivers for the following displays:
 
 ![IMG_2872](https://github.com/user-attachments/assets/63864c09-9611-4113-bf48-1980ebcf7a32)
 
-It's relatively easy to add support for other display types, as long as they use SPI and you have the code to send an image buffer to the display. If you add support for a new display type,
-feel free to submit a pull request so others can benefit from your work.
+Select the display type in `/include/main.h`. It's relatively easy to add support for other display types, as long as they use SPI and you have the code to send an image buffer to the display. If you add support for a new display type, feel free to submit a pull request so others can benefit from your work.
 
 When ordering a display, make sure to include an adapter board to access the SPI pins. Avoid purchasing an "ESP32 demo kit" with it, as it is not necessary.
 In addition to the ePaper display and adapter board, you'll need an ESP32. For larger or full-color displays, PSRAM is required. A Wemos S2 mini (buy it here: https://s.click.aliexpress.com/e/_omXS8J9) 
