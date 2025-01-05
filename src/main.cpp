@@ -7,16 +7,16 @@
 #include "udp.h"
 #include "EPDcommon.h"
 
+//
+// *** select your display type in main.h !!
+//
+
 #ifdef EPD_401_ACEP
 #include "EPD_4in01f.h"
 #endif
 #ifdef EPD_730_SPECTRA
 #include "EPD_7in3e.h"
 #endif
-
-//
-// *** select your display type in main.h !!
-//
 
 #define WAKEUP_REASON_FIRSTBOOT 0xFC
 
