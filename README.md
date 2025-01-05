@@ -6,6 +6,7 @@ Currently, it includes drivers for the following displays:
 - 7,3" Spectra 6 color Epaper Display (buy it here: https://s.click.aliexpress.com/e/_opYM1mB)
 - 4.01" ACeP color Epaper Display (discontinued)
 
+![IMG_2872](https://github.com/user-attachments/assets/63864c09-9611-4113-bf48-1980ebcf7a32)
 
 It's relatively easy to add support for other display types, as long as they use SPI and you have the code to send an image buffer to the display. If you add support for a new display type,
 feel free to submit a pull request so others can benefit from your work.
