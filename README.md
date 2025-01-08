@@ -18,8 +18,7 @@ Connecting the pins is straightforward. You can use a header connector instead o
 
 ![IMG_2873](https://github.com/user-attachments/assets/8a38a5f7-4447-413e-8db0-b4478f6511da)
 
-A basic 3D-printed case for the 7.3" Spectra display is also included in this repository. Since the bare displays are very fragile, 
-it is highly recommended to provide some protection as a first step. It consists of a bezel and an inset. No printing supports needed.
+⚠️ Since the bare displays are very fragile, it is highly recommended to provide some protection as a first step. A basic 3D-printed case for the 7.3" Spectra display is also included in this repository. It consists of a bezel and an inset. No printing supports needed.
 
 To add rigidity, the case is designed to embed a 9x15 cm prototype board (buy it here: https://s.click.aliexpress.com/e/_oDEHPhz), which can be incorporated during the printing process.
 Configure your slicer to pause the print just before the bridges are printed, insert the prototype board, and then resume printing.
