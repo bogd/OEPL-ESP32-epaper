@@ -24,7 +24,7 @@
 
 #ifdef EPD_750_WAVESHARE_V2
 // board with psram needed
-#define HWTYPE 0x36 // Waveshare 7.5 - reusing 36 (BWR display), should actually get a new HWID
+#define HWTYPE 0xC3 // Waveshare 7.5 - requires C3.json on AP, under /tagtypes/
 #define IMGWIDTH 800
 #define IMGHEIGHT 480
 #endif

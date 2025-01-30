@@ -84,7 +84,7 @@ void setup() {
 	/* Demo only, to make sure the display code works */
 	Serial.println("Entering demo code");
 	EPD_7IN5_V2_Init();
-	EPD_7IN5_V2_Display(epd_bitmap_help_me);
+	EPD_7IN5_V2_Display(gImage_7in5_V2);
 	EPD_7IN5_V2_Sleep();
 	Serial.println("Demo done, resuming");
 
