@@ -5,6 +5,7 @@ Currently, it includes drivers for the following displays:
 
 - 7,3" Spectra 6 color Epaper Display (buy it here: https://s.click.aliexpress.com/e/_oDk19jD)
 - 4.01" ACeP color Epaper Display (discontinued)
+- 7.5" V2 Waveshare BW Epaper display ( https://www.aliexpress.com/item/1005002870932909.html ) and driver board ( https://www.aliexpress.com/item/1005007370290558.html ) 
 
 ![IMG_2872](https://github.com/user-attachments/assets/63864c09-9611-4113-bf48-1980ebcf7a32)
 

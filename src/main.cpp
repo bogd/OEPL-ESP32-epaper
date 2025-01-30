@@ -6,6 +6,7 @@
 #include "main.h"
 #include "udp.h"
 #include "EPDcommon.h"
+#include "ImageData.h"
 
 //
 // *** select your display type in main.h !!
@@ -16,6 +17,9 @@
 #endif
 #ifdef EPD_730_SPECTRA
 #include "EPD_7in3e.h"
+#endif
+#ifdef EPD_750_WAVESHARE_V2
+#include "EPD_7in5_V2.h"
 #endif
 
 #define WAKEUP_REASON_FIRSTBOOT 0xFC
@@ -51,11 +55,18 @@ void drawImage(uint8_t *buffer, uint8_t dataType) {
 	EPD_7IN3E_Sleep();
 #endif
 
+#ifdef EPD_750_WAVESHARE_V2
+	EPD_7IN5_V2_Init();
+	Serial.println("display image");
+	EPD_7IN5_V2_Display(buffer);
+	Serial.println("sleep");
+	EPD_7IN5_V2_Sleep();
+#endif
 }
 
 void setup() {
 	Serial.begin(115200);
-	Serial.println("ACEP/Spectra demo");
+	Serial.println("ACEP/Spectra/Waveshare demo");
 
 	Serial.printf("Heap size: %u\n", ESP.getHeapSize());
 	Serial.printf("Free heap: %u\n", ESP.getFreeHeap());
@@ -69,6 +80,13 @@ void setup() {
 	Serial.println("wifi connected");
 
 	Module_Init();
+
+	/* Demo only, to make sure the display code works */
+	Serial.println("Entering demo code");
+	EPD_7IN5_V2_Init();
+	EPD_7IN5_V2_Display(epd_bitmap_help_me);
+	EPD_7IN5_V2_Sleep();
+	Serial.println("Demo done, resuming");
 
 	init_udp();
 	xTaskCreate(advertiseTagTask, "Tag alive", 6000, NULL, 2, NULL);
